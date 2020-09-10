@@ -228,7 +228,7 @@ function selectAnswer(e) {
     if (selectedButton.dataset = correct) {
         correctAnswers++;}
     finalScore.innerHTML=
-    `<div>Thanks to Coach Spins. <a href="https://www.youtube.com/watch?v=TTbz-FI-ZhQ&feature=youtu.be&ab_channel=AdamSpinella" target="_blank">Click here to watch him break down each question.</a></div>
+    `<div style="font-size:13px;">Thanks to Coach Spins. <a href="https://www.youtube.com/watch?v=TTbz-FI-ZhQ&feature=youtu.be&ab_channel=AdamSpinella" target="_blank">Click here to watch him break down each question.</a></div>
     <br>
     <div style="font-weight:bold;">Final Score: ${correctAnswers} correct out of ${questions.length}.</div>
     <hr>
