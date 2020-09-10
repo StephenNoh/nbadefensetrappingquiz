@@ -118,10 +118,10 @@ const questions = [
 {
   question: "10: Assume the plan is to double-team the ballhandler on the pick-and-roll. Who messed up?",
   link: "https://videos.nba.com/nba/pbp/media/2019/12/16/0021900397/171/a8434c08-cd98-2b5b-a4b8-10a1b1adf7f8_960x540.mp4",
-  choices: ["Kelly Olynyk (no. 9). He has to slide down to cut off the Nash dribble from Ja Morant.",
-    "Kendrick Nunn (no. 25). He's supposed to zone up and take the first pass instead of guessing wrong and cheating to the corner.",
-    "Tyler Herro (no. 14). He knows Nunn is protecting the corner at all costs, so he should have pre-switched onto Dillon Brooks.",
-    "Chris Silva (no. 30). When trapping on the sideline, you can't allow a player to drive around you. He made the rotations too difficult on that initial error."],
+  choices: ["Olynyk (no. 9). He has to slide down to cut off Morant's Nash dribble.",
+    "Nunn (no. 25). He's supposed to zone up and take that first pass to Dillon Brooks for the 3.",
+    "Herro (no. 14). He knows Nunn must protect the corner, so he should have pre-switched onto Brooks.",
+    "Silva (no. 30). When trapping on the sideline, you can't allow a player to drive around you. He made the rotations too difficult on that initial error."],
   answer: 3,
   concept: "Rotations off a pick-and-roll double team."
 }
@@ -227,7 +227,7 @@ function selectAnswer(e) {
     if (selectedButton.dataset = correct) {
         correctAnswers++;}
     finalScore.innerHTML=
-    `<div>Special thank you to Coach Spins for providing the clips and answers for this quiz. LINK HERE TO ADAM'S ANSWERS VIDEO + TWITTER FOLLOW LINK</div>
+    `<div>Thanks to Coach Spins. <a href="https://www.youtube.com/watch?v=TTbz-FI-ZhQ&feature=youtu.be&ab_channel=AdamSpinella" target="_blank">Click here to watch him break down each question.</a></div>
     <br>
     <div style="font-weight:bold;">Final Score: ${correctAnswers} correct out of ${questions.length}.</div>
     <hr>
