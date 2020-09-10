@@ -47,12 +47,13 @@ const questions = [
   question: "4. Assume the gameplan is to double the post. Who screwed up?",
   choices: [
     "Bam Adebayo (no. 15). He did not pass off his cutter.",
-    "Duncan Robinson(no. 55). He should have sprinted to the corner.",
-    "Kendrick Nunn (no. 25). The corner was his responsibility.",
+    "Duncan Robinson(no. 55) and Kendrick Nunn (no. 25). One of them should have sprinted to the corner.",
+    "Jimmy Butler (no. 22). He should have positioned to take away the corner pass.",
     "Meyers Leonard (no. 0). He should have left his man Gasol to a teammate and rotated to the corner."],
   answer: 3,
+  answer2: 1,
   link: "https://videos.nba.com/nba/pbp/media/2019/12/03/0021900301/398/f734ea9f-6509-3604-9a79-0d6ba4400381_960x540.mp4",
-  concept: "Rotations on post double teams."
+  concept: "Rotations on post double teams. (note: Leonard is most responsible, but Robinson and Nunn are also acceptable answers)"
 },
 {  
   question: "5. Assume the plan is to double-team the ballhandler on the pick-and-roll. Who messed up?",
