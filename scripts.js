@@ -8,6 +8,7 @@ const questions = [
   answer: 0,
   link: "https://videos.nba.com/nba/pbp/media/2020/02/06/0021900768/347/4a0b8124-03e5-0fcb-2631-290e79e5e68d_1280x720.mp4",
   concept: "Rotations on post double teams.",
+  conceptLink: "https://youtu.be/TTbz-FI-ZhQ?t=9"
 },
 // {
 //     question: "2. Assume the game plan is to double Giannis in the post. Who screwed up?",
@@ -31,6 +32,7 @@ const questions = [
     answer: 2,
     link: "https://videos.nba.com/nba/pbp/media/2020/01/30/0021900714/243/3ddec5e1-e9ed-a903-f9f8-8f3b972ad2ed_1280x720.mp4",
     concept: "Rotations on post double teams.",
+    conceptLink: "https://youtu.be/TTbz-FI-ZhQ?t=55"
 },
 {
   question: "3. Assume the gameplan is to double the post. Who screwed up?",
@@ -41,7 +43,8 @@ const questions = [
     "James Ennis (no. 11). His positioning on the double was wrong, and he should have turned his body to prevent passes into the paint."],
   answer: 1,
   link: "https://videos.nba.com/nba/pbp/media/2019/12/27/0021900468/71/58578926-64f1-8ce8-339f-1b6627f20239_960x540.mp4",
-  concept: "Rotations on post double teams."
+  concept: "Rotations on post double teams.",
+  conceptLink: "https://youtu.be/TTbz-FI-ZhQ?t=87"
 },
 {
   question: "4. Assume the gameplan is to double the post. Who screwed up?",
@@ -53,7 +56,8 @@ const questions = [
   answer: 3,
   answer2: 1,
   link: "https://videos.nba.com/nba/pbp/media/2019/12/03/0021900301/398/f734ea9f-6509-3604-9a79-0d6ba4400381_960x540.mp4",
-  concept: "Rotations on post double teams. (note: Leonard is most responsible, but Robinson and Nunn are also acceptable answers)"
+  concept: "Rotations on post double teams. (note: Leonard is most responsible, but Robinson and Nunn are also acceptable answers)",
+  conceptLink: "https://youtu.be/TTbz-FI-ZhQ?t=128"
 },
 {  
   question: "5. Assume the plan is to double-team the ballhandler on the pick-and-roll. Who messed up?",
@@ -65,6 +69,7 @@ const questions = [
   answer: 0,
   link: "https://videos.nba.com/nba/pbp/media/2020/02/12/0021900814/100/a8517643-55e5-fe9e-36ec-b5a03f7a77f0_1280x720.mp4",
   concept: "PNR Double",
+  conceptLink: "https://youtu.be/TTbz-FI-ZhQ?t=203"
 },
 {
   question: "6. Assume the plan is to double-team the ballhandler on the pick-and-roll. Who messed up??",
@@ -76,6 +81,7 @@ const questions = [
     "Kendrick Nunn (no. 25). He was the low man and was supposed to trap the box to contest on any drive."],
   answer: 2,
   concept: "PNR Double",
+  conceptLink: "https://youtu.be/TTbz-FI-ZhQ?t=256"
 },
 {
   question: "7. Assume the plan is to double-team the ballhandler on the pick-and-roll. Who messed up?",
@@ -87,6 +93,7 @@ const questions = [
   ],
   answer: 0,
   concept: "PNR Double",
+  conceptLink: "https://youtu.be/TTbz-FI-ZhQ?t=295"
 },
 {
   question: "8. Assume the plan is to double-team the ballhandler on the pick-and-roll. Who messed up?",
@@ -98,6 +105,7 @@ const questions = [
   answer: 0,
   answer2: 1,
   concept: "Rotations off a pick-and-roll double team (two potential answers depending on Portland's scheme, but it's probably Whiteside's responsibility.",
+  conceptLink: "https://youtu.be/TTbz-FI-ZhQ?t=338"
 },
 {
   question: "9: Assume the plan is to double-team the ballhandler on the pick-and-roll. Who messed up?",
@@ -107,7 +115,8 @@ const questions = [
     "Kentavious Caldwell-Pope (no. 1). As the ball swings back out to the perimeter, the weak-side corner (Pope) should cover the rim.",
     "Anthony Davis (no. 3). He's supposed to zone up to take away the passing lane. He was up too close on Carter, making the pass too easy."],
   answer: 2,
-  concept: "Rotations off a pick-and-roll double team."
+  concept: "Rotations off a pick-and-roll double team.",
+  conceptLink: "https://youtu.be/TTbz-FI-ZhQ?t=381"
 },
 // {
 //   question: "11: Assume the plan is to double-team the ballhandler on the pick-and-roll. Who messed up?",
@@ -124,7 +133,8 @@ const questions = [
     "Herro (no. 14). He knows Nunn must protect the corner, so he should have pre-switched onto Brooks.",
     "Silva (no. 30). When trapping on the sideline, you can't allow a player to drive around you. He made the rotations too difficult on that initial error."],
   answer: 3,
-  concept: "Rotations off a pick-and-roll double team."
+  concept: "Rotations off a pick-and-roll double team.",
+  conceptLink: "https://youtu.be/TTbz-FI-ZhQ?t=437"
 }
 ]
 
@@ -132,6 +142,7 @@ let correctAnswers = 0
 
 const startButton = document.getElementById('start-btn')
 const otherButton = document.getElementById('other-btn')
+const spinsButton = document.getElementById('spins-btn')
 const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
@@ -152,6 +163,7 @@ function startGame() {
     correctAnswers = 0
     startButton.classList.add('hide')
     otherButton.classList.add('hide')
+    spinsButton.classList.add('hide')
     currentQuestionIndex = 0
     questionContainerElement.classList.remove('hide')
     finalScore.classList.add("hide")
@@ -225,12 +237,12 @@ function selectAnswer(e) {
     document.getElementById('missed-concepts-id').classList.remove('hide')
     finalScore.classList.remove('hide')
     otherButton.classList.remove('hide')
+    spinsButton.classList.remove('hide')
     if (selectedButton.dataset = correct) {
         correctAnswers++;}
     finalScore.innerHTML=
-    `<div style="font-size:13px;">Thanks to Coach Spins. <a href="https://www.youtube.com/watch?v=TTbz-FI-ZhQ&feature=youtu.be&ab_channel=AdamSpinella" target="_blank">Click here to watch him break down each question.</a></div>
-    <br>
-    <div style="font-weight:bold;">Final Score: ${correctAnswers} correct out of ${questions.length}.</div>
+    `
+    <div style="font-weight:bold;">Final Score: ${correctAnswers} correct out of ${questions.length}. <a href="http://www.twitter.com/spinella14" target="_blank">Follow Coach Spins</a> | <a href="http://www.twitter.com/stephnoh" target="_blank">Follow Stephen Noh</a></div>
     <hr>
     <div>0-3 correct: Average NBA fan. Retake the quiz and click on the links to learn the concepts you're missing.</div>
     <div>4-7 correct: You're a student of the game!</div>
