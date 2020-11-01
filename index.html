@@ -3,28 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The NBA Defense Quiz Part 2</title>
+    <title>Basketball Quizzes</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
         <div class="intro">
-            <h1>The NBA Defense Quiz Part 2: Trapping</h1>
+            <h1>The NBA Defense Quiz Part 3: Stunts and X-Outs</h1>
             <p>Programming by <a href="http://www.twitter.com/stephnoh" target="_blank">Stephen Noh</a>, NBA writer.</p>
             <p>Clips and analysis provided by <a href="http://www.twitter.com/spinella14" target="_blank">Coach Spins,</a> writer, <a href="https://www.youtube.com/channel/UCYOC2Wp6qCkZ_ZD9028kl-Q" target="_blank">youtuber</a>, and assistant men's basketball coach for Dickinson College.</p>
-            <p>Click the start button and test how much you really know about NBA defense!</p>
-            
-            <!-- <p>Part 2 <a href="https://stephennoh.github.io/defensequiz2/" target="_blank">here</a></p> -->
+            <p>Click the start button and test your knowledge about NBA offenses.</p>
             <br>
-            <!-- <p>Select difficulty level:</p>
-            <form action="">
-              <input type="radio" name="difficulty" value="normal"> Normal<br>
-              <input type="radio" name="difficulty" value="hard"> Hard<br>
-            </form> -->
+
         </div>
         <div id="question-container" class="hide">
           <div id="question">Question</div>
-          <div id="video">Video</div>
+          <div id="video"></div>
+          <div id="youtube"></div>
           <div id="answer-buttons" class="btn-grid">
             <button class="btn">Answer 1</button>
             <button class="btn">Answer 2</button>
@@ -33,15 +28,15 @@
           </div>
         </div>
         <div class="scoreboard">
-            <div id="missed-concepts-id" class="hide">Concept tested: <span id="missed-concepts"></span></div>
+            <div id="missed-concepts-id" class="hide">Explanation: <span id="missed-concepts"></span></div>
             <div id="final-score" class="hide">Final Score:</div>
         </div>
         <div class="controls">
           <button id="start-btn" class="start-btn btn">Start</button>
           <button id="next-btn" class="next-btn btn hide">Next</button>
-          <button id="other-btn" class="other-btn btn hide" onclick="window.location.href='https://stephennoh.github.io/codingportfolio/';">More quizzes</button>
-          <button id="spins-btn" class="other-btn btn hide" onclick="window.location.href='https://www.youtube.com/watch?v=TTbz-FI-ZhQ&feature=youtu.be&ab_channel=AdamSpinella';">See Answer Explanations</button>
-          
+          <button id="other-btn" class="other-btn btn hide" onclick="window.location.href='../index.html';">More quizzes</button>
+          <button id="tweet" class="other-btn btn hide">Tweet score</button>
+          <button id="spins-btn" class="other-btn btn hide" onclick="window.location.href='https://www.youtube.com/watch?v=5ZDQHbYP7Jw';">Coach Spins answer video</button>
         </div>
     </div>
     <script src="scripts.js"></script>
