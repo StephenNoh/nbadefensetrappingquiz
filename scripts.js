@@ -1,24 +1,25 @@
 const questions = [
     {
-      question: "1. LeBron James comes off the ball screen and forces Jae Crowder to help from one pass away on his drive. Why does Anthony Davis shoot the 3?",
-      choices: ["Crowder left Davis alone, so Davis hits the shot", 
-      "Duncan Robinson hesitates and doesn’t commit to Davis, who is left open", 
-      "Duncan Robinson bluffs at Davis, making him hesitate to stall and give Crowder more time to recover", 
-      "Dwight Howard is wrestling with Meyers Leonard in front of the basket, so there’s nowhere for Davis to drive it"],
+      question: "1. LeBron James comes off the ball screen and forces Jae Crowder to help from one pass away on his drive. What is the contributing factor leading to Anthony Davis taking (and missing) this 3-pointer?",
+      choices: [
+      "Crowder's ability to disrupt plays acting as a free safety for the Heat defense.", 
+      "Duncan Robinson's indecisiveness, mistakenly leaving Davis open.", 
+      "Duncan Robinson bluffing at Davis, making him hesitate and giving Crowder more time to recover", 
+      "Dwight Howard mistakenly wrestling with Meyers Leonard in front of the basket, leaving nowhere for Davis to drive it."],
       answer: 2,
-    //   link: "https://videos.nba.com/nba/pbp/media/2020/08/20/0041900102/292/8839710b-542a-f389-e166-0435bf9fad44_1280x720.mp4",
-      concept: "Duncan Robinson executes a textbook “stunt”, or bluff, at Anthony Davis. When Crowder helps, Robinson is left to momentarily guard two players: Davis and Kentavious Caldwell-Pope. Because KCP (38.5% from 3) is a better shooter than Davis (33%), he chooses to stunt instead of selling out on Davis. His movement towards Davis disrupts the natural momentum of a catch-and-shoot or an extra to the corner. Crowder gets back and has a decent contest on the shot"
+      link: "https://videos.nba.com/nba/pbp/media/2020/10/04/0041900403/373/8a7236c2-f60e-9cfe-7b52-1e20c808f9e1_960x540.mp4",
+      concept: "Duncan Robinson executes a textbook “stunt”, or bluff, at Anthony Davis. When Crowder helps, Robinson is left to momentarily guard two players: Davis and Kentavious Caldwell-Pope. Because KCP is a better shooter than Davis and also in an easier location to make a 3, he chooses to stunt instead of selling out on Davis. His movement towards Davis disrupts the natural momentum of a catch-and-shoot or an extra pass to the corner. Crowder gets back and has a decent contest on the shot"
     },
     {
-        question: "2. What gives Tyler Herro time to recover to Kentavious Caldwell-Pope on the pick & pop?",
-        choices: [
-        "Jae Crowder lunging at KCP from the corner",
-        "Herro cleanly getting back from Adebayo",
-        "A random, nonsensical pass fake from KCP",
-        "LeBron’s pass is one dribble too late coming off the screen"],
-        answer: 0,
-        // link: "https://videos.nba.com/nba/pbp/media/2020/01/13/0021900596/528/b8ad208b-ffef-eeba-eff8-77dc9c13607b_1280x720.mp4",
-        concept: "The same concept as in the previous clip, Crowder is temporarily splitting two players while Herro hedges the ball screen: his man in the corner and KCP on the pop. His timely stunt is what causes KCP to hesitate and give a pass fake to Crowder’s man. But Crowder had no intention of guarding KCP, just bluffing to make him think Crowder might guard him."
+      question: "2. What gives Tyler Herro time to recover to Kentavious Caldwell-Pope on the pick & pop?",
+      choices: [
+      "Jae Crowder lunging at KCP before returning to the corner",
+      "Herro cleanly getting back from Adebayo",
+      "A random, nonsensical pass fake from KCP",
+      "LeBron’s pass is one dribble too late coming off the screen"],
+      answer: 0,
+      link: "https://videos.nba.com/nba/pbp/media/2020/10/06/0041900404/530/b8fb1e24-ed51-c723-ad0f-2086e0096440_960x540.mp4",
+      concept: "The same concept as in the previous clip, Crowder is temporarily splitting two players while Herro hedges the ball screen: his man in the corner and KCP on the pop. His timely stunt is what causes KCP to hesitate and give a pass fake to Crowder’s man."
     },
     {
       question: "3. Marcus Smart closes out to DJ Augustin on the skip pass from Vucevic. When he does, why is he so dramatically on top of Augustin’s right shoulder?",
@@ -29,20 +30,20 @@ const questions = [
         "Both he and Tatum originally played passing lanes to prevent Augustin from moving the ball, which caused Augustin to hesitate. Then Smart would claim ball and be on the top-side."],
       answer: 0,
       answer2: 3,
-    //   link: "https://videos.nba.com/nba/pbp/media/2020/02/01/0021900732/7/2df09386-6b69-f6f7-f36e-359f87cb1357_1280x720.mp4",
-      concept: "Description: When Kemba Walker goes to help on the post, any kickout would immediately create a 3-on-2 for the Magic. Tatum and Smart are playing angles, both stunting in the passing lane, to give Walker time to read where he should go. One of Smart or Tatum then need to claim Augustin, which Smart does. This is less of a miscommunication and more of the cat-and-mouse game help defenders need to play to buy their teammate time to recover.",
+      link: "https://videos.nba.com/nba/pbp/media/2020/08/09/0021901288/297/c0d6763c-ffa7-8ae1-d519-fb049c97b0e3_960x540.mp4",
+      concept: "Tatum and Smart are playing angles, both stunting in the passing lane, to give Walker time to read where he should go. One of Smart or Tatum then need to claim Augustin, which Smart does. This is less of a miscommunication and more of the cat-and-mouse game that help defenders need to play to buy their teammate time to recover.",
       // conceptLink: "https://youtu.be/TTbz-FI-ZhQ?t=87"
     },
     {
       question: "4. Why does Towns hesitate to take his 3-point attempt on the pick & pop?",
       choices: [
-        "Covington floats behind Towns, bringing his man into the play",
-        "Torrey Craig bluffs at Towns from the next pass away, which discourages a clean shot",
+        "Covington (no. 33) floats behind Towns, bringing his man into the play",
+        "Torrey Craig (no. 3) bluffs at Towns from the next pass away, which discourages a clean shot",
         "He was expecting to roll, but because Denver trapped the ball screen, he had to pop and take a shot he wasn’t ready for",
         "He doesn’t realize it’s late in the shot clock"],
       answer: 0,
       answer2: 1,
-    //   link: "https://videos.nba.com/nba/pbp/media/2020/02/11/0021900802/239/6b6c14e3-d61e-2b1e-962b-1c601f0a9f9d_960x540.mp4",
+      link: "https://videos.nba.com/nba/pbp/media/2020/01/20/0021900649/74/200ac437-28f4-a4e9-7d2b-05281caeff7b_960x540.mp4",
       concept: "While Covington has awful spacing, Torrey Craig likely would have stunted anyway. His responsibility as the next-closest defender to Towns is to bluff at him hard enough to take away the pick & pop 3-pointer. You can see that he’s not trying to switch onto Towns, just to lower the percentage of his shot and buy Jokic time to recover. This was a great defensive possession from Denver.",
     },
     {  
@@ -50,16 +51,17 @@ const questions = [
       choices: [
         "Brook Lopez and Khris Middleton botch the ball screen coverage",
         "Lopez is in Drop Coverage and should be protecting the rim, not standing where he is",
-        "Sterling Brown (#23) is anticipating the pick & pop to Horford, so he cheats towards his stunt responsibility, which allows Jaylen to cut behind him",
+        "Sterling Brown (no. 23) is anticipating the pick & pop to Horford, so he cheats towards his stunt responsibility, which allows Jaylen to cut behind him",
         "Giannis Antetokounmpo is late to rotate to help"],
       answer: 2,
       answer2: 3,
-    //   link: "https://videos.nba.com/nba/pbp/media/2020/09/06/0041900204/664/a267dc5a-4cbe-7510-4722-a3d52e98df76_1280x720.mp4",
-      concept: "There’s no doubt Giannis is late, but Sterling Brown is the guy to watch here. Horford pops to the top of the key after screening, which means the next-closest man (Brown) has to be ready to stunt. But Sterling loses sight of his man while doing so, and an alert Jaylen cuts backdoor before the ball can be thrown to Horford. Lopez has no responsibility other than to defend the ball screen and recover to Horford atop the key."
+      link: "https://videos.nba.com/nba/pbp/media/2019/04/28/0041800201/490/ba8b6d3b-fe45-a902-aa25-3be9bfbbc4be_960x540.mp4",
+      concept: "There’s no doubt Giannis is late, but Sterling Brown is the guy to watch here. Horford pops to the top of the key after screening, which means the next-closest man (Brown) has to be ready to stunt. But Sterling Brown loses sight of his man while doing so, and an alert Jaylen cuts backdoor before the ball can be thrown to Horford. Lopez has no responsibility other than to defend the ball screen and recover to Horford atop the key."
     },
     {
+      //start here
       question: "6. When Danny Green goes to help on Jrue Holiday’s middle drive, why does LeBron James end up with the steal?",
-      link: "https://videos.nba.com/nba/pbp/media/2020/01/20/0021900644/22/6fcebcc6-7205-1e9b-6208-e82507c3e1d8_1280x720.mp4",
+      link: "https://videos.nba.com/nba/pbp/media/2020/01/03/0021900522/305/79f42c0d-41fe-abc4-2ede-a256e5d1a70e_960x540.mp4",
       choices: [
         "He’s trying to stunt and recover, but Redick throws an errant pass",
         "There’s not enough spacing between Redick and E’Twaun Moore (#55) so LeBron can guard both",
@@ -70,38 +72,39 @@ const questions = [
     },
     {
       question: "7. This possession is an example of which defensive concept?",
-      link: "https://videos.nba.com/nba/pbp/media/2020/08/05/0021901265/254/26e38758-1015-479b-951d-5cd7dc2f6b01_1280x720.mp4",
-      choices: ["Tagging the roller",
+      link: "https://videos.nba.com/nba/pbp/media/2019/11/27/0021900256/419/9f1627b8-9a47-dec8-8d58-22bd76086606_960x540.mp4",
+      choices: [
+        "Tagging the roller",
         "X-Out on the weak side",
         "Stunt & Recover",
         "Flood"
       ],
       answer: 1,
-      concept: "When Brogdon passes the ball to the corner, two defenders (Mudiay #8 and Bogdanovic #44) wind up switching men. Mudiay takes the corner shooter, and Bogdanovic switches onto Mudiay’s man late. This is known as an \"X-Out.\""
+      concept: "When Brogdon passes the ball to the corner, two defenders (Mudiay, no. 8, and Bogdanovic, no. 44) wind up switching men. Mudiay takes the corner shooter, and Bogdanovic switches onto Mudiay’s man late. This is known as an \"X-Out.\""
     },
     {
-      question: "8. Victor Oladipo is guarding Damyean Dotson (#21) in the corner and fulfills his help responsibilities at the rim. Why does he end up contesting the shot from Julius Randle (#30) at the end of the play?",
-      link: "https://videos.nba.com/nba/pbp/media/2020/09/01/0041900212/99/e42e49cc-c770-adfc-da49-a8a04c98fbdb_1280x720.mp4",
+      question: "8. Victor Oladipo is guarding Damyean Dotson (no. 21) in the corner and fulfills his help responsibilities at the rim. Why does he end up contesting the shot from Julius Randle (no. 30) at the end of the play?",
+      link: "https://videos.nba.com/nba/pbp/media/2020/02/01/0021900728/111/67cd0b5f-ffdc-1f88-4eca-762c0958e787_960x540.mp4",
       choices: ["Oladipo couldn’t recover to his man in time, so Justin Holiday (#8) purposefully takes Dotson in the corner for him. The two then switch assignments.",
       "Oladipo couldn’t recover to his man in time, but Holiday accidentally over-helps off Randle and Oladipo has to go wherever there’s an open man.",
       "TJ Warren (#1) is supposed to take Randle, but doesn’t, so Oladipo has to.",
       "When Oladipo helps, Malcolm Brogdon is supposed to switch off the ball; he should be the one who takes Randle. Because he doesn’t, Oladipo has to."],
       answer: 0,
-      concept: "Description: Oladipo is the low man, so he helps at the rim. The next-lowest defender on the weak-side, Holiday, is in what’s called “help the helper” position. His job is to split the difference between his man (Randle) and Oladipo’s man (Dotson). On any pass out to one of these two players, Holiday will take the ball and Oladipo will recover to the other Knick. Because the ball goes to Dotson first, they wind up switching defensive assignments, which is known as an \"X-Out.\""
+      concept: "Oladipo is the low man, so he helps at the rim. The next-lowest defender on the weak-side, Holiday, is in what’s called “help the helper” position. His job is to split the difference between his man (Randle) and Oladipo’s man (Dotson). On any pass out to one of these two players, Holiday will take the ball and Oladipo will recover to the other Knick. Because the ball goes to Dotson first, they wind up switching defensive assignments, which is known as an \"X-Out.\""
     },
     {
-      question: "9. Watch Jerami Grant (#9) and Torrey Craig (#3). They execute which help defensive coverage?",
-      link: "https://videos.nba.com/nba/pbp/media/2020/01/18/0021900632/272/008542c3-71b7-26be-56c9-fb64dbabdcaa_960x540.mp4",
+      question: "9. Watch Jerami Grant (no. 9) and Torrey Craig (no. 3). They execute which help defensive coverage?",
+      link: "https://videos.nba.com/nba/pbp/media/2020/01/19/0021900638/12/8bda6373-cfd5-0fa4-8589-c16dff41c42f_960x540.mp4",
       choices: ["X-Out on the weak side",
         "Stunt and recover",
         "Trap the box & recover",
         "None of the above"],
       answer: 2,
-      concept: "Because Grant and Craig never wind up switching men, this is not an X-Out. What happens, though, is that Craig tags the rolling Sabonis at the front of the rim, where he’s going to “trap the box”, a fancy term for prevent an easy dunk or layup. As Craig does that, Grant sinks to temporarily guard both his man and Craig’s. But when Sabonis throws the ball to Grant’s man first, Craig is able to recover back to his assignment without any switches."
+      concept: "Because Grant and Craig never wind up switching men, this is not an X-Out. What happens, though, is that Craig tags the rolling Sabonis at the front of the rim, where he’s going to “trap the box”, a fancy term for preventing an easy dunk or layup. As Craig does that, Grant sinks to temporarily guard both his man and Craig’s. But when Sabonis throws the ball to Grant’s man first, Craig is able to recover back to his assignment without any switches."
     },
     {
-      question: "10. Why was Dorian Finney-Smith (#10 Dallas) so open in the corner?",
-      link: "https://videos.nba.com/nba/pbp/media/2019/10/22/0021900001/711/cbcdb811-a5a2-0dde-96a6-454d981457c8_960x540.mp4",
+      question: "10. Why was Dorian Finney-Smith (no. 10, Dallas) so open in the corner?",
+      link: "https://videos.nba.com/nba/pbp/media/2020/03/04/0021900923/54/c167109c-7133-cd53-4b87-968740fa61f2_960x540.mp4",
       choices: [
         "Derrick Favors (#22) is supposed to X-Out and take Finney-Smith in the corner",
         "Brandon Ingram (#14) is supposed to stunt and recover to Porzingis, but over-commits",
@@ -126,7 +129,7 @@ const questions = [
     const videoElement = document.getElementById('video')
     const finalScore = document.getElementById("final-score")
     const intro = document.querySelector(".intro")
-    const spinsButton = document.getElementById('spins-btn')
+    // const spinsButton = document.getElementById('spins-btn')
     
     let currentQuestionIndex
     tweetButton.addEventListener('click', tweetLink)
@@ -145,7 +148,7 @@ const questions = [
         startButton.classList.add('hide')
         otherButton.classList.add('hide')
         tweetButton.classList.add('hide')
-        spinsButton.classList.add('hide')
+        // spinsButton.classList.add('hide')
         currentQuestionIndex = 0
         questionContainerElement.classList.remove('hide')
         finalScore.classList.add("hide")
@@ -223,7 +226,7 @@ const questions = [
         finalScore.classList.remove('hide')
         otherButton.classList.remove('hide')
         tweetButton.classList.remove('hide')
-        spinsButton.classList.remove('hide')
+        // spinsButton.classList.remove('hide')
         if (selectedButton.dataset = correct) {
             correctAnswers++;}
         finalScore.innerHTML=
