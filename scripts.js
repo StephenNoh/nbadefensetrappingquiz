@@ -96,8 +96,8 @@ const questions = [
       question: "9. Watch Jerami Grant (no. 9) and Torrey Craig (no. 3). They execute which help defensive coverage?",
       link: "https://videos.nba.com/nba/pbp/media/2020/01/19/0021900638/12/8bda6373-cfd5-0fa4-8589-c16dff41c42f_960x540.mp4",
       choices: ["X-Out on the weak side",
-        "Stunt and recover",
-        "Trap the box & recover",
+        "Passing lane stunt",
+        "Help & recover",
         "None of the above"],
       answer: 2,
       concept: "Because Grant and Craig never wind up switching men, this is not an X-Out. What happens, though, is that Craig tags the rolling Sabonis at the front of the rim, where he’s going to “trap the box”, a fancy term for preventing an easy dunk or layup. As Craig does that, Grant sinks to temporarily guard both his man and Craig’s. But when Sabonis throws the ball to Grant’s man first, Craig is able to recover back to his assignment without any switches."
